@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>セレモニー吉岡</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="" />
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js' integrity='sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js' integrity='sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==' crossorigin='anonymous'></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="p-header">
+    <div class="l-header">
+      <div class="p-header__wrapper">
+        <div class="p-header__logo">
+          <a href="/">
+            セレモニー吉岡  
+          </a>
+        </div>
+        <nav class="p-header__nav">
+          <ul class="p-header__lists">
+            <li class="p-header__list"><a href="/hall.html">ホール紹介</a></li>
+            <li class="p-header__list"><a href="/merit.html">選ばれる理由</a></li>
+            <li class="p-header__list-mark">
+              <a class="p-header__list-markLink" href="/hall.html">料金・プラン</a>
+              <div class="p-header__list-nav">
+                <ul class="p-header__list-navLists">
+                  <li class="p-header__list-navList"><a class="p-header__list-navLink" href="/hall.html">セレモニー吉岡</a></li>
+                  <li class="p-header__list-navList"><a class="p-header__list-navLink" href="/hall.html">ハートウェル・ハウス</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="p-header__list"><a href="/offering.html">供物・供花</a></li>
+            <li class="p-header__list"><a href="/info.html">会社概要</a></li>
+            <li class="p-header__list"><a href="/consultation.html">事前相談</a></li>
+          </ul>
+          <div class="p-header__btn">
+            <a href="/consultation.html#contact" class="p-header__btn-mail">
+              <div class="p-header__btn-mailWrapper">
+                <div class="p-header__btn-mailIcon">
+                  <img src="./images/mail-icon.svg" alt="メールアイコン">
+                </div>
+                <span class="p-header__btn-mailText">お問い合わせ</span>
+              </div>
+            </a>
+            <a href="0223452515" class="p-header__btn-tel">
+              <div class="p-header__btn-telWrapper">
+                <div class="p-header__btn-telText-up">お急ぎの方はこちら</div>
+                <div class="p-header__btn-telText">022-345-2515</div>
+                <div class="p-header__btn-telText-bottom">24時間受付</div>
+              </div>
+            </a>
+          </div>
+        </nav>
+        <div class="c-drawer-icon">
+          <div class="c-drawer-icon__bars">
+            <div class="c-drawer-icon__bar c-drawer-icon__bar--color"></div>
+            <div class="c-drawer-icon__bar c-drawer-icon__bar--color"></div>
+            <div class="c-drawer-icon__bar c-drawer-icon__bar--color"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c-drawer-content">
+      <ul class="c-drawer-content__lists">
+        <li class="c-drawer-content__list"><a href="">ホール紹介</a></li>
+        <li class="c-drawer-content__list">
+          <a href="/hall.html">セレモニー吉岡
+            <span>－料金・プラン</span>
+          </a>
+        </li>
+        <li class="c-drawer-content__list">
+          <a href="/hall.html">ハートウェル・ハウス
+            <span>－料金・プラン</span>
+          </a>
+        </li>
+        <li class="c-drawer-content__list"><a href="/offering.html">供物・供花</a></li>
+        <li class="c-drawer-content__list"><a href="/info.html">会社概要</a></li>
+        <li class="c-drawer-content__list"><a href="/consultation.html">事前相談</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="p-offering-mv">
+      <div class="l-offering-mv">
+        <div class="c-mv p-offering-mv__bg">
+          <div class="c-mv__title-wrapper c-mv__title-wrapper--white">
+            <h1 class="c-mv__title c-mv__title--white">供物・供花</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-offering-order">
+      <div class="l-offering-order">
+        <div class="l-inner">
+          <div class="p-offering-order__box">
+            <h2 class="p-offering-order__title js-float">供物・供花のご注文はこちらより</h2>
+            <p class="p-offering-order__text js-float">セレモニー吉岡では供花をはじめ、洗練されたお供物の数々をご用意致しております。弊社が施行しておりますご喪家様をはじめ、他社様で施工しておりますご喪家様や、会館にも変わらず丁寧にお供えさえていただきます。是非、お世話になった方への御礼をカタチにこめてお届けしてはいかがでしょうか。</p>
+            <p class="p-offering-order__comments js-float">友の会会員の方は15%OFFとなります。</p>
+          </div>
+          <div class="p-offering-order__wrapper">
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">①</div>
+                  <div class="p-offering-order__item-title">生花スタンド三段</div>
+                </div>
+                <div class="p-offering-order__item-price">33,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">②</div>
+                  <div class="p-offering-order__item-title">生花スタンド二段</div>
+                </div>
+                <div class="p-offering-order__item-price">22,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">③</div>
+                  <div class="p-offering-order__item-title">生花スタンド一段</div>
+                </div>
+                <div class="p-offering-order__item-price">16,500円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">④</div>
+                  <div class="p-offering-order__item-title">洋花生花スタンド二段</div>
+                </div>
+                <div class="p-offering-order__item-price">27,500円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑤</div>
+                  <div class="p-offering-order__item-title">洋花生花スタンド一段</div>
+                </div>
+                <div class="p-offering-order__item-price">22,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑥</div>
+                  <div class="p-offering-order__item-title">だるま籠生花（大）</div>
+                </div>
+                <div class="p-offering-order__item-price">16,500円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑦</div>
+                  <div class="p-offering-order__item-title">だるま籠生花（中）</div>
+                </div>
+                <div class="p-offering-order__item-price">11,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑧</div>
+                  <div class="p-offering-order__item-title">アレンジ籠生花（小）</div>
+                </div>
+                <div class="p-offering-order__item-price">5,500円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑨</div>
+                  <div class="p-offering-order__item-title">アレンジ籠生花（ミニ）</div>
+                </div>
+                <div class="p-offering-order__item-price">3,300円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑩</div>
+                  <div class="p-offering-order__item-title">かご盛り（中・食材）</div>
+                </div>
+                <div class="p-offering-order__item-price">11,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑪</div>
+                  <div class="p-offering-order__item-title">かご盛り（大・食材）</div>
+                </div>
+                <div class="p-offering-order__item-price">16,500円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑫</div>
+                  <div class="p-offering-order__item-title">かご盛り（特大・食材）</div>
+                </div>
+                <div class="p-offering-order__item-price">22,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑬</div>
+                  <div class="p-offering-order__item-title">線香盛（中）</div>
+                </div>
+                <div class="p-offering-order__item-price">11,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑭</div>
+                  <div class="p-offering-order__item-title">線香盛（大）</div>
+                </div>
+                <div class="p-offering-order__item-price">16,500円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑮</div>
+                  <div class="p-offering-order__item-title">線香盛（特大）</div>
+                </div>
+                <div class="p-offering-order__item-price">22,000円（税込）</div>
+              </div>
+            </div>
+            <div class="p-offering-order__item">
+              <div class="p-offering-order__img">
+                <img src="" alt="">
+              </div>
+              <div class="p-offering-order__body">
+                <div class="p-offering-order__item-box">
+                  <div class="p-offering-order__number">⑯</div>
+                  <div class="p-offering-order__item-title">商品券（金券+手数料1,100税込）</div>
+                </div>
+                <div class="p-offering-order__item-price">10,000～</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-offering-form l-offering-form">
+      <div class="l-inner">
+        <div class="p-offering-form__wrapper">
+          <div class="p-offering-form__title">
+            <h2 class="c-section-title1 c-section-title1--center" data-en="Form">ご注文フォーム</h2>
+          </div>
+          <form class="p-offering-form__box" method="post">
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="mourner">ご葬家名・喪主名<span class="p-offering-form__required">必須</span></label>
+              <input type="text" name="mourner" id="mourner">
+            </div>
+            <div class="p-offering-form__item p-offering-form__item--top">
+              <label  class="p-offering-form__head" for="order_item" id="item">ご注文商品<span class="p-offering-form__required">必須</span></label>
+              <div class="p-offering-form__checkbox-wrapper">
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order1"><label for="order1">1</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order2"><label for="order2">2</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order3"><label for="order3">3</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order4"><label for="order4">4</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order5"><label for="order5">5</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order6"><label for="order6">6</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order7"><label for="order7">7</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order8"><label for="order8">8</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order9"><label for="order9">9</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order10"><label for="order10">10</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order11"><label for="order11">11</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order12"><label for="order12">12</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order13"><label for="order13">13</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order14"><label for="order14">14</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order15"><label for="order15">15</label>
+                </div>
+                <div class="p-offering-form__checkbox">
+                  <input type="checkbox" name="order_item" value="生花1対" id="order16"><label for="order16">16</label>
+                </div>
+              </div>
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="number">友の会会員番号</label>
+              <input type="number" name="number" id="number">
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="name_tag">札名<span class="p-offering-form__required">必須</span></label>
+              <input type="text" name="name_tag" id="name_tag">
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="payment">お支払い方法<span class="p-offering-form__required">必須</span></label>
+              <select name="payment" id="payment">
+                <option value="" selected disabled>お支払い方法を選択ください</option>
+                <option value="銀行振込">銀行振込</option>
+                <option value="【現地支払い】現金">【現地支払い】現金</option>
+                <option value="【現地支払い】クレジットカード">【現地支払い】クレジットカード</option>
+              </select>
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="delivery">お届け先<span class="p-offering-form__required">必須</span></label>
+              <select name="delivery" id="delivery">
+                <option value="" selected disabled>お届け先を選択ください</option>
+                <option value="自宅">自宅</option>
+                <option value="セレモニー吉岡">セレモニー吉岡</option>
+                <option value="ハートウェル・ハウス">ハートウェル・ハウス</option>
+              </select>
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="name">お名前<span class="p-offering-form__required">必須</span></label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="ruby">ふりがな</label>
+              <input type="text" name="ruby" id="ruby">
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="post-code">郵便番号</label>
+              <input type="number" name="post-code" id="post-code">
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="address">住所<span class="p-offering-form__required">必須</span></label>
+              <input type="text" name="address" id="address">
+            </div>
+            <div class="p-offering-form__item">
+              <label class="p-offering-form__head" for="tel">電話番号<span class="p-offering-form__required">必須</span></label>
+              <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="p-offering-form__item p-offering-form__item--top">
+              <label class="p-offering-form__head p-offering-form__head--margin-top" for="other">その他、ご要望</label>
+              <textarea name="other" id="other"></textarea>
+            </div>
+            <div class="p-offering-form__btn">
+              <div class="p-offering-form__btn-arrow">
+                <input type="submit" value="確認する" class="p-offering-form__submit">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="p-footer l-footer">
+    <div class="l-inner">
+      <div class="p-footer__wrapper">
+        <div class="p-footer__left">
+          <div class="p-footer__logo">セレモニー吉岡</div>
+          <p class="p-footer__address">〒981-3627<br>宮城県黒川郡大和町吉岡東２丁目１３－７</p>
+          <p class="p-footer__tel"><a href="0223452515" class="p-footer__tel-link">TEL：022-345-2515</a><span>24時間受付</span> </p>
+          <a href="/consultation.html" class="p-footer__btn">
+            <span class="p-footer__btn-text">メールでのお問い合わせ</span>
+          </a>
+        </div>
+        <div class="p-footer__right">
+          <ul class="p-footer__right-menu1">
+            <li class="p-footer__menu-item"><a href="/hall.html">ホール紹介</a></li>
+            <li class="p-footer__menu-item p-footer__menu-item--lh"><a href="/hall.html">セレモニー吉岡<br>－料金・プラン</a></li>
+            <li class="p-footer__menu-item p-footer__menu-item--lh"><a href="/hall.html">ハートウェル・ハウス<br>－料金・プラン</a></li>
+          </ul>
+          <ul class="p-footer__right-menu2">
+            <li class="p-footer__menu-item2"><a href="/offering.html">供物・供花注文</a></li>
+            <li class="p-footer__menu-item2"><a href="/info.html">会社概要</a></li>
+            <li class="p-footer__menu-item2"><a href="/notice.html">お知らせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
